@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETCH A SKETCH</title>
+    <link href="/dist/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="paint.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="">
+    <nav class="navbar navbar-expand-sm navbar-dark h-3 w-auto">
+      <div
+        class="text-orange-800 text-5xl lg:text-6xl m-10 font-serif font-bold text-center pt-2"
+      >
+        ETCH A SKETCH
+      </div>
+    </nav>
+    <div class="">
+      <div
+        class="h-40 w-40 xl:ml-96 ml-14 md:ml-60 mr-28 lg:ml-8 2xl:ml-96 2xl:pl-96 sm:mt-5 sm:ml-28 sm:mr-40"
+      >
+        <div id="myGrid" class="shadow-black shadow-2xl"></div>
+      </div>
+    </div>
+    <div class="container bg-transparent sm:mr-72" id="circle">
+      <div class="">
+        <input type="color" id="selector" class="h-20 w-40" />
+      </div>
+      <div class="c">
+        <button class="onemode font-serif border">
+          <span class="text-xl">Color mode</span>
+        </button>
+      </div>
+
+      <div class="">
+        <button class="rainbow font-serif">
+          <span class="text-xl">Rainbow mode </span>
+        </button>
+      </div>
+      <div class="c">
+        <button class="erase font-serif border">
+          <span class="text-xl">Erase</span>
+        </button>
+      </div>
+      <div class="c">
+        <button class="font-serif border border-black">
+          <span class="text-xl clear">Clear</span>
+        </button>
+      </div>
+      <div class="slider-container m-5 ml-2">
+        <label for="sizeSlider"> <span id="sizeValue">16</span>px</label>
+        <input
+          type="range"
+          id="sizeSlider"
+          min="8"
+          max="10"
+          value="15"
+          class=""
+        />
+      </div>
+    </div>
+    <hr />
+    <div
+      class="pt-52 bg-red-700 text-xl font-semibold text-center hover:bg-blue-700"
+    >
+      Copyright &copy; 2024 ❤️ KAL&nbsp;
+      <a href="https://github.com/pinsugi">
+        <span class="transform rotate-180">
+          <i
+            class="fa-brands fa-github"
+            style="font-size: 32px; height: 32px; width: 32px"
+          ></i>
+        </span>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
